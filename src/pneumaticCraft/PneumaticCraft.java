@@ -1,6 +1,6 @@
 package pneumaticCraft;
 
-import igwmod.lib.Constants;
+//import igwmod.lib.Constants;
 import net.minecraft.command.ServerCommandManager;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.MinecraftServer;
@@ -61,7 +61,7 @@ public class PneumaticCraft{
 
     @EventHandler
     public void PreInit(FMLPreInitializationEvent event){
-        event.getModMetadata().version = Constants.fullVersionString();
+//        event.getModMetadata().version = Constants.fullVersionString();
         isNEIInstalled = Loader.isModLoaded(ModIds.NEI);
 
         PneumaticRegistry.init(PneumaticCraftAPIHandler.getInstance());

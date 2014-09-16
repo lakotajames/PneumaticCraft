@@ -24,3 +24,6 @@ environment.properties
 .gradle/
 .settings/
 /sounds
+gradle/
+gradlew
+

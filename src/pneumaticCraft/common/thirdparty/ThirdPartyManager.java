@@ -13,10 +13,11 @@ import pneumaticCraft.common.thirdparty.ae2.AE2;
 import pneumaticCraft.common.thirdparty.bloodmagic.BloodMagic;
 import pneumaticCraft.common.thirdparty.buildcraft.BuildCraft;
 import pneumaticCraft.common.thirdparty.computercraft.ComputerCraft;
+import pneumaticCraft.common.thirdparty.enderio.EnderIO;
 import pneumaticCraft.common.thirdparty.fmp.FMPLoader;
 import pneumaticCraft.common.thirdparty.hydraulicraft.Hydraulicraft;
 import pneumaticCraft.common.thirdparty.ic2.IC2;
-import pneumaticCraft.common.thirdparty.igwmod.IGWMod;
+//import pneumaticCraft.common.thirdparty.igwmod.IGWMod;
 import pneumaticCraft.common.thirdparty.thaumcraft.Thaumcraft;
 import pneumaticCraft.common.thirdparty.waila.Waila;
 import pneumaticCraft.lib.Log;
@@ -39,7 +40,7 @@ public class ThirdPartyManager{
         Map<String, Class<? extends IThirdParty>> thirdPartyClasses = new HashMap<String, Class<? extends IThirdParty>>();
         thirdPartyClasses.put(ModIds.INDUSTRIALCRAFT, IC2.class);
         thirdPartyClasses.put(ModIds.BUILDCRAFT, BuildCraft.class);
-        thirdPartyClasses.put(ModIds.IGWMOD, IGWMod.class);
+//        thirdPartyClasses.put(ModIds.IGWMOD, IGWMod.class);
         thirdPartyClasses.put(ModIds.COMPUTERCRAFT, ComputerCraft.class);
         thirdPartyClasses.put(ModIds.FMP, FMPLoader.class);
         thirdPartyClasses.put(ModIds.WAILA, Waila.class);
@@ -48,6 +49,7 @@ public class ThirdPartyManager{
         thirdPartyClasses.put(ModIds.BLOOD_MAGIC, BloodMagic.class);
         thirdPartyClasses.put(ModIds.AE2, AE2.class);
         thirdPartyClasses.put(ModIds.CHISEL, Chisel.class);
+        thirdPartyClasses.put(ModIds.ENDERIO, EnderIO.class);
         DramaSplash.newDrama();
 
         List<String> enabledThirdParty = new ArrayList<String>();
